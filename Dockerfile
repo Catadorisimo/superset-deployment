@@ -21,5 +21,6 @@ ENV PYTHONPATH="${PYTHONPATH}:/app/pythonpath/"
 
 ENV FLASK_ENV=production
 ENV SUPERSET_ENV=production
+ENV SUPERSET_SECRET_KEY=${SUPERSET_SECRET_KEY}
 
 RUN chmod a+x /app/docker/*.sh
